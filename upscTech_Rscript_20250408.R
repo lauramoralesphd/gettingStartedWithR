@@ -40,12 +40,12 @@ str(phen)
 #Height should be numeric data type, but R read it as character...why?
 #Because the decimal points were not consistent! Sometimes commas were used, other times periods were used
 
-#Do we have the expected number of genotypes? There should be 14.
+#Do we have the expected number of genotypes? There should be 15.
 #Use unique() function to look at the unique values in the Genotype column
 unique(phen$Genotype)
 #Use length() and unique() functions to get the number of unique genotype names
 length(unique(phen$Genotype))
-#No...there are 30 unique genotype names
+#No...there are 28 unique genotype names
 #Problem: there are synonymous genotype names, sometimes with all-capitals and sometimes not
 
 #Do we have the expected number of treatments? There should be two, drought vs control
